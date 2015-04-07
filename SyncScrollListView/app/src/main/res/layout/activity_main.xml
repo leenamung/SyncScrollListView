@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ggg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/scrolling_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/menu_contain"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="25dp">
+
+        <LinearLayout
+            android:id="@+id/menu_box"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/point_bar"
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0" />
+    </RelativeLayout>
+</FrameLayout>
